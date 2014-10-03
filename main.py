@@ -136,7 +136,7 @@ class TicTacToeGrid(GridLayout):
             if check_win(move = button.coords, player = self.current_player, \
                         moves = self.move_list[self.current_player], \
                         board = self.board):
-                winner = '{0}s win!'.format(player[self.current_player])
+                winner = '{0} wins!'.format(player[self.current_player])
             elif 0 not in self.board:
                 winner = 'Draw... nobody wins!'
             if winner:
